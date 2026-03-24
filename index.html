@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoundHub Music - Find Your Perfect Sound</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- Header -->
+    <header>
+        <div class="logo-section">
+           <img src="../image/logo.png" alt="logo">
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="products.html">Shop</a>
+            <a href="contact.html">Contact</a>
+            <div class="cart-icon" onclick="openCart()">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count" id="cartCount">0</span>
+            </div>
+        </nav>
+        <button class="login-btn" onclick="openLogin()">Login</button>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Find Your Perfect Sound</h1>
+            <p class="hero-quote">"Guitars, keyboards, drums & traditional instruments for every musician."</p>
+            <div class="button-group">
+                <button class="btn btn-primary" onclick="window.location.href='products.html'">
+                    <i class="fas fa-shopping-bag"></i> Shop Instruments
+                </button>
+                <button class="btn btn-secondary" onclick="window.location.href='products.html'">
+                    <i class="fas fa-boxes"></i> View Beginner Bundles
+                </button>
+            </div>
+        </div>
+        <div class="hero-visual">
+          <div class="music-notes">
+                <i class="fas fa-music"></i>
+                <i class="fas fa-music"></i>
+                <i class="fas fa-music"></i>
+            </div>
+            <div class="music-notes">
+                <i class="fas fa-music"></i>
+                <i class="fas fa-music"></i>
+                <i class="fas fa-music"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h2>SoundHub Music</h2>
+                <p>© 2026 SoundHub Music.<br>All rights reserved.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links:</h3>
+                <p>
+                    <a href="about.html">About</a> | 
+                    <a href="products.html">Shop</a> | 
+                    <a href="contact.html">Contact</a>
+                </p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact:</h3>
+                <p>Phone: <strong>9876543210</strong><br>
+                Email: <strong>soundhub123@gmail.com</strong><br>
+                Location: <strong>Kathmandu, Nepal</strong></p>
+            </div>
+        </div>
+        <div class="footer-divider">
+            <p>&copy; 2026 SoundHub Music. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://facebook.com" class="social-icon facebook-icon" title="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://instagram.com" class="social-icon instagram-icon" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://whatsapp.com" class="social-icon whatsapp-icon" title="WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="https://tiktok.com" class="social-icon tiktok-icon" title="TikTok">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+  
+    <script src="script.js"></script>
+</body>
+</html>

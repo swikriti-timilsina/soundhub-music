@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - SoundHub Music</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+         <div class="logo-section">
+           <img src="../image/logo.png" alt="logo">
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="products.html">Shop</a>
+            <a href="contact.html">Contact</a>
+            <div class="cart-icon" onclick="openCart()">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count" id="cartCount">0</span>
+            </div>
+        </nav>
+        <button class="login-btn" onclick="openLogin()">Login</button>
+    </header>
+
+    <!-- About Section -->
+    <section class="content-section">
+        <div class="section-container">
+            <h2 class="section-title">About SoundHub Music</h2>
+            
+            <p class="section-intro">
+                Welcome to <strong>SoundHub Music</strong>, your ultimate destination for premium musical instruments and equipment. 
+                Since our foundation, we've been committed to making quality music accessible to everyone from complete beginners 
+                taking their first steps in music to professional musicians seeking top-tier equipment.
+            </p>
+
+            <h3 style="font-size: 24px; margin-top: 3rem; margin-bottom: 2rem; color: var(--text-dark);">Why Choose SoundHub Music?</h3>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <div class="feature-title">Premium Quality</div>
+                    <div class="feature-description">
+                        All our instruments are carefully selected and tested to ensure the highest quality standards. 
+                        We work only with trusted manufacturers and suppliers.
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="feature-title">Expert Guidance</div>
+                    <div class="feature-description">
+                        Our knowledgeable team is always ready to help you find the perfect instrument for your needs and 
+                        answer any questions you may have.
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <div class="feature-title">Wide Selection</div>
+                    <div class="feature-description">
+                        From classical guitars and electric keyboards to traditional sitars and tablas, we offer a diverse 
+                        range of instruments for every musician.
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-tag"></i>
+                    </div>
+                    <div class="feature-title">Competitive Prices</div>
+                    <div class="feature-description">
+                        We offer the best value for your money with competitive pricing and regular promotions to help you 
+                        save on quality instruments.
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <div class="feature-title">Fast Delivery</div>
+                    <div class="feature-description">
+                        We ensure quick and safe delivery of your orders across Kathmandu and surrounding areas. Track your 
+                        order every step of the way.
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="feature-title">Warranty & Support</div>
+                    <div class="feature-description">
+                        All our products come with warranty coverage and dedicated customer support to ensure your satisfaction 
+                        long after purchase.
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div style="background: linear-gradient(135deg, var(--primary-gold), var(--hover-gold)); 
+                padding: 2rem; border-radius: 12px; margin-top: 3rem; text-align: center; color: var(--primary-dark);">
+                <h3 style="font-size: 22px; margin-bottom: 1rem;">Ready to Start Your Musical Journey?</h3>
+                <p style="margin-bottom: 1.5rem; font-size: 16px;">
+                    Explore our collection of quality instruments and find your perfect sound today.
+                </p>
+                <a href="products.html" style="display: inline-block; background: white; color: var(--primary-gold); 
+                   padding: 0.75rem 2rem; border-radius: 25px; text-decoration: none; font-weight: 600; 
+                   transition: all 0.3s ease;" 
+                   onmouseover="this.style.transform='scale(1.05)'" 
+                   onmouseout="this.style.transform='scale(1)'">
+                    <i class="fas fa-shopping-bag"></i> Shop Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h2>SoundHub Music</h2>
+                <p>© 2026 SoundHub Music.<br>All rights reserved.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links:</h3>
+                <p>
+                    <a href="about.html">About</a> | 
+                    <a href="products.html">Shop</a> | 
+                    <a href="contact.html">Contact</a>
+                </p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact:</h3>
+                <p>Phone: <strong>9876543210</strong><br>
+                Email: <strong>soundhub123@gmail.com</strong><br>
+                Location: <strong>Kathmandu, Nepal</strong></p>
+            </div>
+        </div>
+        <div class="footer-divider">
+            <p>&copy; 2026 SoundHub Music. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://facebook.com" class="social-icon facebook-icon" title="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://instagram.com" class="social-icon instagram-icon" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://whatsapp.com" class="social-icon whatsapp-icon" title="WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="https://tiktok.com" class="social-icon tiktok-icon" title="TikTok">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - SoundHub Music</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <!-- Header -->
+   <header>
+         <div class="logo-section">
+           <img src="../image/logo.png" alt="logo">
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="products.html">Shop</a>
+            <a href="contact.html">Contact</a>
+            <div class="cart-icon" onclick="openCart()">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count" id="cartCount">0</span>
+            </div>
+        </nav>
+        <button class="login-btn" onclick="openLogin()">Login</button>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="content-section">
+        <div class="section-container">
+            <h2 class="section-title">Contact Us</h2>
+            <p class="section-intro" style="text-align: center;">
+                Have questions? We'd love to hear from you. Get in touch with our team today!
+            </p>
+
+            <div class="contact-wrapper">
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <h3 style="margin-bottom: 1.5rem; color: var(--text-dark); font-size: 20px;">Send us a Message</h3>
+                    <form onsubmit="handleContactForm(event)">
+                        <div class="form-group">
+                            <label for="contactName">Your Name</label>
+                            <input type="text" id="contactName" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactEmail">Your Email</label>
+                            <input type="email" id="contactEmail" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactPhone">Phone Number</label>
+                            <input type="tel" id="contactPhone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="contactSubject">Subject</label>
+                            <input type="text" id="contactSubject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactMessage">Message</label>
+                            <textarea id="contactMessage" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="form-submit">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="contact-info-box">
+                    <h3 style="margin-bottom: 2rem; color: var(--text-dark); font-size: 20px;">Contact Information</h3>
+
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>
+                                SoundHub Music<br>
+                                Kathmandu, Nepal<br>
+                                <strong>Operating Hours:</strong><br>
+                                Monday - Friday: 10 AM - 7 PM<br>
+                                Saturday: 11 AM - 6 PM<br>
+                                Sunday: Closed
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p>
+                                <a href="tel:9876543210">+977 9876543210</a><br>
+                                <small>Available 24/7 for queries</small>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>
+                                <a href="mailto:soundhub123@gmail.com">soundhub123@gmail.com</a><br>
+                                <small>Response time: 24 hours</small>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Section -->
+            <div style="margin-top: 4rem; padding-top: 3rem; border-top: 2px solid var(--border-light);">
+                <h3 style="font-size: 24px; margin-bottom: 2rem; color: var(--text-dark); text-align: center;">
+                    Frequently Asked Questions
+                </h3>
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; max-width: 100%;">
+                    <div style="background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                        <h4 style="color: var(--primary-gold); margin-bottom: 0.5rem; font-size: 16px;">
+                            <i class="fas fa-question-circle"></i> Do you offer warranty?
+                        </h4>
+                        <p style="color: rgb(100, 100, 100); font-size: 14px; line-height: 1.6;">
+                            Yes, all our products come with manufacturer warranty. Details vary by product. 
+                            Please check individual product pages or contact us for specific warranty information.
+                        </p>
+                    </div>
+
+                    <div style="background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                        <h4 style="color: var(--primary-gold); margin-bottom: 0.5rem; font-size: 16px;">
+                            <i class="fas fa-question-circle"></i> What is the delivery time?
+                        </h4>
+                        <p style="color: rgb(100, 100, 100); font-size: 14px; line-height: 1.6;">
+                            We typically deliver within 2-5 business days in Kathmandu. 
+                            For outside Kathmandu, delivery may take 5-10 business days.
+                        </p>
+                    </div>
+
+                    <div style="background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                        <h4 style="color: var(--primary-gold); margin-bottom: 0.5rem; font-size: 16px;">
+                            <i class="fas fa-question-circle"></i> Can I return items?
+                        </h4>
+                        <p style="color: rgb(100, 100, 100); font-size: 14px; line-height: 1.6;">
+                            Yes, we have a 7-day return policy for unused items in original packaging. 
+                            Please contact our team for return authorization.
+                        </p>
+                    </div>
+
+                    <div style="background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                        <h4 style="color: var(--primary-gold); margin-bottom: 0.5rem; font-size: 16px;">
+                            <i class="fas fa-question-circle"></i> Do you offer financing?
+                        </h4>
+                        <p style="color: rgb(100, 100, 100); font-size: 14px; line-height: 1.6;">
+                            We offer flexible payment options for qualified customers. 
+                            Please contact us to discuss financing options for your purchase.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h2>SoundHub Music</h2>
+                <p>© 2026 SoundHub Music.<br>All rights reserved.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links:</h3>
+                <p>
+                    <a href="about.html">About</a> | 
+                    <a href="products.html">Shop</a> | 
+                    <a href="contact.html">Contact</a>
+                </p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact:</h3>
+                <p>Phone: <strong>9876543210</strong><br>
+                Email: <strong>soundhub123@gmail.com</strong><br>
+                Location: <strong>Kathmandu, Nepal</strong></p>
+            </div>
+        </div>
+        <div class="footer-divider">
+            <p>&copy; 2026 SoundHub Music. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://facebook.com" class="social-icon facebook-icon" title="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://instagram.com" class="social-icon instagram-icon" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://whatsapp.com" class="social-icon whatsapp-icon" title="WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="https://tiktok.com" class="social-icon tiktok-icon" title="TikTok">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+ 
+
+    <!-- Cart Modal -->
+   
+
+    <script src="script.js"></script>
+
+</body>
+</html>
