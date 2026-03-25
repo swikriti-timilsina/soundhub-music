@@ -126,7 +126,7 @@ nav a:hover::after {
 /* HERO SECTION */
 .hero {
     background: linear-gradient(135deg, rgb(68, 68, 68) 0%, rgb(85, 85, 85) 100%);
-    background-image: url("../image/hero-musicians.jpg");
+    background-image: url("image/hero-musicians.jpg");
     background-position: center;
     color: white;
     padding: 64px 32px;
